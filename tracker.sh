@@ -54,6 +54,7 @@ GET_TRACKERS() {
         TRACKER=$(
             ${DOWNLOADER} https://trackerslist.com/all_aria2.txt ||
                 ${DOWNLOADER} https://cdn.jsdelivr.net/gh/XIU2/TrackersListCollection@master/all_aria2.txt ||
+                 ${DOWNLOADER} https://raw.githubusercontent.com/ngosang/trackerslist/master/trackers_all.txt ||
                 ${DOWNLOADER} https://trackers.p3terx.com/all_aria2.txt
         )
     else
